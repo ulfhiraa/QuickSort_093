@@ -73,7 +73,7 @@ void q_short(int low, int high)
 		{
 		// swap the element at index i with the element at index j
 			swap(i, j);
-			mov_count++ = ;		
+			mov_count++;		
 		}
 		// j now contraint the index of the last element in the sort
 		if (low < j) // langkah 11
@@ -85,5 +85,8 @@ void q_short(int low, int high)
 		}
 		// sort the list on the left of pivot using quick sort
 		q_short(low, j - 1);  //langkah 12
+
+		// sort the list on the right of pivot using quick sort
+		q_short(j + 1, high); // langkah 13
 	}
 }
