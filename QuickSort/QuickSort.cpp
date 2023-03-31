@@ -75,5 +75,7 @@ void q_short(int low, int high)
 			swap(i, j);
 			mov_count++ = ;		
 		}
+		// j now contraint the index of the last element in the sort
+		if (low < j) // langkah 11
 	}
 }
