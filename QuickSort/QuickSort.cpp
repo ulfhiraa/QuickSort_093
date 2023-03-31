@@ -90,3 +90,11 @@ void q_sort(int low, int high)
 		q_sort(j + 1, high); // langkah 13
 	}
 }
+
+void display() {
+	cout << "\n---------------" << endl;
+	cout << "Sorted Array" << endl;
+	cout << "-----------------" << endl;
+
+
+}
