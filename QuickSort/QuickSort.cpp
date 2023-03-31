@@ -37,7 +37,7 @@ void swap(int x, int y)
 	arr[y] = temp;
 }
 
-void q_short(int low, int high)
+void q_sort(int low, int high)
 {
 	int pivot, i, j;
 	if (low > high)  // langkah 1
@@ -84,9 +84,9 @@ void q_short(int low, int high)
 			mov_count++;
 		}
 		// sort the list on the left of pivot using quick sort
-		q_short(low, j - 1);  //langkah 12
+		q_sort(low, j - 1);  //langkah 12
 
 		// sort the list on the right of pivot using quick sort
-		q_short(j + 1, high); // langkah 13
+		q_sort(j + 1, high); // langkah 13
 	}
 }
